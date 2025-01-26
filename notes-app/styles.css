@@ -1,0 +1,154 @@
+/* Modern 3D Design with Glassmorphism and Soft Shadows */
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+main {
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Glassmorphic App Bar */
+app-bar {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #2c3e50;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Form Section with 3D Depth */
+.form-section {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.1), 
+    0 6px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.form-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.15), 
+    0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Centered and Organized Notes Section */
+.notes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes-section h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+note-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.1), 
+    0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+note-card:hover {
+  transform: scale(1.02);
+  box-shadow: 
+    0 12px 25px rgba(0, 0, 0, 0.15), 
+    0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+  }
+  
+  .notes-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+note-form {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #noteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #noteForm label {
+    font-weight: 500;
+    color: #2c3e50;
+  }
+
+  #noteForm input, 
+  #noteForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #noteForm textarea {
+    resize: vertical;
+    min-height: 15px;
+  }
+
+  #noteForm button {
+    align-self: center;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #noteForm button:hover {
+    background-color: #7c26ff;
+  }
